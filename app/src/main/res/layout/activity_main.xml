@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.deepshooter.searchapp.MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Search..."
+        android:padding="10dp"
+        android:id="@+id/edit_query"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vR_recyclerViewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edit_query"
+        android:layout_alignLeft="@+id/edit_query"
+        android:layout_alignStart="@+id/edit_query" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/text"
+        android:visibility="gone"
+        android:text="No Result Found"/>
+
+</RelativeLayout>
